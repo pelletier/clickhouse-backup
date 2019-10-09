@@ -108,7 +108,7 @@ s3:
   backups_to_keep_local: 0     # BACKUPS_TO_KEEP_LOCAL
   backups_to_keep_s3: 0        # BACKUPS_TO_KEEP_S3
   compression_level: 1         # S3_COMPRESSION_LEVEL
-  # supports 'tar', 'lz4', 'bzip2', 'gzip', 'sz', 'xz'
+  # supports 'tar', 'lz4', 'bzip2', 'gzip', 'sz', 'xz', 'zstd'
   compression_format: gzip      # S3_COMPRESSION_FORMAT
 ```
 

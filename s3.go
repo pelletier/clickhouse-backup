@@ -334,7 +334,8 @@ func (s *S3) BackupList() ([]Backup, error) {
 					strings.HasSuffix(parts[0], ".tar.bz2") ||
 					strings.HasSuffix(parts[0], ".tar.gz") ||
 					strings.HasSuffix(parts[0], ".tar.sz") ||
-					strings.HasSuffix(parts[0], ".tar.xz") {
+					strings.HasSuffix(parts[0], ".tar.xz") ||
+					strings.HasSuffix(parts[0], ".tar.zstd") {
 					s3Files[parts[0]] = s3Backup{
 						Tar:  true,
 						Date: *c.LastModified,
